@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+.container {
+  margin-bottom: 2rem;
+  padding: 1.2rem;
+  border-radius: 1.5rem;
+  background-color: $light-grey;
+}
+
+.title {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: calc(20 / 14);
+}

@@ -1,0 +1,29 @@
+@import "normalize.scss";
+@import "reset.scss";
+@import "variables.scss";
+@import "swiper/swiper.min.css";
+@import "swiper/swiper-bundle.min.css";
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 4.5rem 2.5rem;
+  max-width: 375px;
+  background-color: lighten($color: $blue, $amount: 10);
+}
+
+.swiper {
+  margin-bottom: 1.2rem;
+}
+
+.swiper-slide {
+  width: auto;
+  min-width: 6rem;
+}

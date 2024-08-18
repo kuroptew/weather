@@ -1,0 +1,20 @@
+@import "../../styles/variables";
+
+.bar__container {
+  display: inline-block;
+  position: relative;
+  background-color: $grey;
+}
+
+.bar {
+  position: absolute;
+  background-color: $blue;
+  z-index: 1000;
+}
+
+.current {
+  position: absolute;
+  border-radius: 100%;
+  background-color: $light-grey;
+  z-index: 9999;
+}

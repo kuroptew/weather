@@ -1,0 +1,33 @@
+@import "../../styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem .5rem;
+  background-color: $light-grey;
+  border-radius: 1rem;
+  align-items: center;
+  color: $black;
+  gap: .4rem;
+  cursor: pointer;
+}
+
+.time {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: calc(14/10);
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+
+.info {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: calc(20/14);
+  white-space: nowrap;
+}

@@ -1,0 +1,37 @@
+@import '../../styles/variables';
+
+.form{
+  margin-bottom: 2rem;
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  padding: 1.2rem 2rem;
+  width: 100%;
+  border: none;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: calc(22/15);
+  color: $dark-grey;
+  background-color: #FDFCFC;
+  outline: none;
+
+  &::placeholder {
+    color: $dark-grey;
+  }
+
+  &:focus {
+    outline:none;
+    border: $black .2rem solid;
+  }
+}
+
+.search__icon {
+  position: absolute;
+  width: 1.8rem;
+  height: 1.8rem;
+  top: 1.4rem;
+  right: 2rem;
+}

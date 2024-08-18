@@ -1,0 +1,54 @@
+@import "../../styles/variables";
+
+.item {
+  border-top: 0.2rem solid $dark-grey;
+  position: relative;
+  display: flex;
+  padding: 1rem 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.day {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: calc(18 / 14);
+}
+
+.icon {
+  position: absolute;
+  left: 33%;
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+}
+
+.temperatures {
+  display: flex;
+  align-items: center;
+}
+
+.min-temperature,
+.max-temperature {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: calc(14 / 12);
+}
+
+.min-temperature {
+  margin-right: 0.4rem;
+  color: $grey;
+}
+
+.bar {
+  display: inline-block;
+  width: 6rem;
+  height: 0.4rem;
+  border-radius: 2rem;
+  background-color: $blue;
+}
+
+.max-temperature {
+  margin-left: 0.4rem;
+  color: $black;
+}
