@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, Key, KeyboardEvent, useState } from "react";
 import { useAppDispatch } from "../../redux/store";
 
 import { changeCity } from "../../redux/weather/slice";
@@ -10,7 +10,8 @@ const Search: React.FC = () => {
   const [value, setValue] = useState("");
 
   const dispatch = useAppDispatch();
-  const onChangeCity = (event: KeyboardEvent<HTMLInputElement>) => {
+
+  const onChangeCity = (event: KeyboardEvent) => {
     if (event.code === "Enter") {
       event.preventDefault();
       setValue("");
@@ -28,7 +29,7 @@ const Search: React.FC = () => {
         onChange={(event: ChangeEvent<HTMLInputElement>) => {
           setValue(event.target.value);
         }}
-        onKeyPress={onChangeCity}
+        onKeyDown={onChangeCity}
       />
       <svg
         className={styles["search__icon"]}
